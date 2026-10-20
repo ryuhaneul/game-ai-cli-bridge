@@ -1,0 +1,25 @@
+# runtime artifacts of the bridge
+LAST.log
+LAST-IMAGE-TEST.log
+LAST-IMAGE-TEST.previous.log
+image-test-output-*.png
+jobs/
+
+# secrets (never commit)
+.env
+.env.*
+!.env.example
+*.dpapi
+*.key
+*.pem
+
+# python / editor
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
+.DS_Store
+
+# diagnostics output (--dump-cli-events example folder)
+p2dump/

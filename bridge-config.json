@@ -1,0 +1,34 @@
+{
+  "port": 4315,
+  "player2": {
+    "port": 4315,
+    "passthrough": "all",
+    "allow": ["/v1/tts/", "/v1/stt/"]
+  },
+  "claude": {
+    "model": "opus",
+    "effort": "low"
+  },
+  "codex": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "grok": {
+    "model": "grok-4.7",
+    "effort": "low"
+  },
+  "image": {
+    "provider": "codex",
+    "fallback_provider": "grok",
+    "width": 1100,
+    "height": 640
+  },
+  "tts": {
+    "provider": "fish",
+    "model": "s2.1-pro-free",
+    "reference_id": null,
+    "language": "ko",
+    "fallback": true,
+    "sample_rate": 24000
+  }
+}
